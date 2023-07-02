@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --font-fam1: "Inter", sans-serif;
+  --font-fam2: "Bebas Neue", sans-serif;
+  --font-fam2: "Oswald", sans-serif;
+  --font-fam3: "Roboto", sans-serif;
+  --p-size: 2rem;
+}
+
+.paragraph-type {
+  font-family: var(--font-fam1);
+  font-size: var(--p-size);
+  color: var(--second-color);
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: center;
+  font-weight: 500;
+}
