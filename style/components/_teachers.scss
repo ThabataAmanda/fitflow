@@ -1,0 +1,45 @@
+.section-teachers {
+  background-image: url(../../media/img/teachers/teacher.jpg);
+  position: relative;
+
+  .title {
+    font-size: 5.313rem;
+    text-align: right;
+  }
+
+  .paragraph-type {
+    text-align: right;
+    font-size: 1.875rem;
+    font-weight: 300;
+  }
+
+  .section-teachers__content {
+    display: flex;
+    gap: 25px;
+    padding: 5.625rem 0;
+    align-items: center;
+    position: relative;
+
+    .right-text {
+      width: 555px;
+    }
+
+    .left-image {
+      position: relative;
+width: 520px;
+      .border {
+        top: 2%;
+        right: -2%;
+      }
+
+      .teachers__image-box {
+        position: relative;
+
+        img {
+          border: 1px solid var(--main-color);
+        }
+      }
+    }
+  }
+
+}

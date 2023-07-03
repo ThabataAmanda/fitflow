@@ -1,8 +1,5 @@
 .more-items {
   background-image: url(../../media/img/more-items/bg-img.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 .more-items .bg {
   height: 100%;
@@ -36,10 +33,6 @@
   position: relative;
 }
 .more-items .image-right .border {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--linear1);
   top: 2%;
   left: -2%;
 }

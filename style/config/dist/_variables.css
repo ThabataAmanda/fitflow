@@ -7,3 +7,27 @@
   height: 100vh;
   z-index: -1;
 }
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg_black {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--linear1);
+  z-index: 0;
+}
