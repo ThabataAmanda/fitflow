@@ -2,9 +2,11 @@
 :root {
   --font-fam1: "Inter", sans-serif;
   --font-fam2: "Bebas Neue", sans-serif;
-  --font-fam2: "Oswald", sans-serif;
-  --font-fam3: "Roboto", sans-serif;
+  --font-fam3: "Oswald", sans-serif;
+  --font-fam4: "Roboto", sans-serif;
   --p-size: 2rem;
+  --title1-size: 6rem;
+  --second-tile-size: 3rem;
 }
 
 .paragraph-type {
@@ -12,7 +14,44 @@
   font-size: var(--p-size);
   color: var(--second-color);
   letter-spacing: 1px;
-  line-height: 1;
+  line-height: 1.2;
   text-align: center;
   font-weight: 500;
+}
+
+.title {
+  font-size: var(--title1-size);
+  font-family: var(--font-fam3);
+  text-transform: uppercase;
+  color: var(--second-color);
+  line-height: 1;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.title::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  display: block;
+  background: var(--linear1);
+}
+
+.diff-text {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.second-title {
+  color: var(--second-color);
+  font-size: var(--second-tile-size);
+  white-space: nowrap;
+}
+
+.second-title::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  display: block;
+  background: linear-gradient(90deg, #E86C2E, #E89A50);
 }

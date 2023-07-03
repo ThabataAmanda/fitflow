@@ -1,0 +1,25 @@
+.section-items {
+  background-color: var(--color1);
+}
+.section-items .container-list-item {
+  display: flex;
+  gap: 65px;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+.section-items .container-list-item .box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.section-items .container-list-item .box-item img {
+  width: 3rem;
+}
+.section-items .container-list-item .box-item .name-item {
+  color: var(--second-color);
+  font-family: var(--font-fam1);
+  text-align: center;
+  white-space: nowrap;
+}

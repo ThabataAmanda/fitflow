@@ -3,6 +3,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  position: relative;
+
+  .bg_black {
+    background: rgba(0, 0, 0, 0.70);
+    backdrop-filter: blur(35px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
 
   .section-about__content {
     display: flex;
@@ -10,6 +21,7 @@
     justify-content: space-between;
     padding: 5.625rem 0;
     align-items: center;
+    z-index: 1;
 
     .gallery {
       display: grid;
@@ -20,12 +32,17 @@
         height: 250px;
         overflow: hidden;
         width: 100%;
+        transition: 0.4s;
 
         img {
           object-fit: cover;
           width: 100%;
           height: 100%;
         }
+      }
+
+      .gallery__box-image:hover{
+        transform: scale(1.1);
       }
     }
 

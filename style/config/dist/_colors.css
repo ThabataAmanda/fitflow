@@ -1,0 +1,8 @@
+:root {
+  --color1: #050B0A;
+  --first-color: #000;
+  --second-color: #fff;
+  --linear1: linear-gradient(90deg, #E86C2E, #E89A50);
+  --main-color: #E86C2E;
+  --main-color2: #E89A50;
+}
