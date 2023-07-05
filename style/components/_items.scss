@@ -2,28 +2,43 @@
   background-color: var(--color1);
 
   .container-list-item {
-    display: flex;
-    gap: 65px;
     overflow: hidden;
     padding: 2rem 0;
 
-    .box-item {
+    ul {
+      animation: move-treadmill 20s linear infinite;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
+      gap: 65px;
 
-      img{
-        width: 3rem;
-      }
+      .box-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
 
-      .name-item{
-        color: var(--second-color);
-        font-family: var(--font-fam1);
-        text-align: center;
-        white-space: nowrap;
+        img {
+          width: 3rem;
+        }
+
+        .name-item {
+          color: var(--second-color);
+          font-family: var(--font-fam1);
+          text-align: center;
+          white-space: nowrap;
+        }
       }
     }
+
+    @keyframes move-treadmill {
+      0% {
+        margin-left: 0;
+      }
+
+      100% {
+        margin-left: calc(-100% - 20px);
+      }
+    }
+
   }
 }
