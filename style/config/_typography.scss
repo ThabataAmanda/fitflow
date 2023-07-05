@@ -6,9 +6,15 @@
   --font-fam3: 'Oswald', sans-serif;
   --font-fam4: 'Roboto', sans-serif;
 
+  --small-size: 0.75rem;
   --p-size: 2rem;
   --title1-size: 6rem;
   --second-tile-size: 3rem;
+  --medium-size: 4rem;
+  --third-tile-size: 4.5rem;
+
+  --title-plan: 2.5rem;
+
 }
 
 .paragraph-type {
@@ -36,7 +42,7 @@
   height: 5px;
   width: 100%;
   display: block;
-  background:var(--linear1);
+  background: var(--linear1);
 }
 
 .diff-text {
@@ -56,4 +62,49 @@
   width: 100%;
   display: block;
   background: linear-gradient(90deg, #E86C2E, #E89A50);
+}
+
+.third-title {
+  font-size: var(--third-tile-size);
+  font-family: var(--font-fam3);
+  text-transform: uppercase;
+  color: var(--second-color);
+  line-height: 1;
+  position: relative;
+}
+
+.title-plan {
+  font-size: var(--p-size);
+  font-family: var(--font-fam3);
+  color: var(--second-color);
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 700;
+}
+
+.price {
+  font-size: var(--medium-size);
+  font-family: var(--font-fam3);
+  color: var(--second-color);
+  font-weight: 700;
+  position: relative;
+}
+
+.price::after {
+  content: ',00';
+  font-size: var(--title-plan);
+  font-family: var(--font-fam3);
+  color: var(--second-color);
+  font-weight: 700;
+  position: absolute;
+  top: -30px;
+
+}
+
+.month {
+  font-size: var(--small-size);
+  font-family: var(--font-fam3);
+  color: var(--second-color);
+  font-weight: 700;
 }

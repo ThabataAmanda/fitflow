@@ -31,3 +31,25 @@
   background: var(--linear1);
   z-index: 0;
 }
+
+.container-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 80px;
+}
+
+.button-buy {
+  background: var(--linear1);
+  padding: 16px 35px;
+  font-family: var(--font-fam1);
+  text-transform: uppercase;
+  color: var(--second-color);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.7s;
+}
