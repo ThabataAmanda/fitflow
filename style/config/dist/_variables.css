@@ -39,6 +39,9 @@
   gap: 1rem;
   margin-bottom: 80px;
 }
+.container-title .title-deco {
+  z-index: 1;
+}
 
 .button-buy {
   background: var(--linear1);
@@ -52,4 +55,39 @@
   margin-bottom: 30px;
   cursor: pointer;
   transition: 0.7s;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.title-footer {
+  font-size: var(--text-size);
+}
+
+@media (max-width: 1024px) {
+  .title-footer {
+    font-size: 1rem;
+  }
+}
+.carrossel-plans {
+  display: flex;
+}
+.carrossel-plans .arrows {
+  width: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.carrossel-plans .arrow-right {
+  margin-left: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .carrossel-plans .arrows {
+    display: contents;
+  }
+  .carrossel-plans .arrows img {
+    width: 5rem;
+  }
 }

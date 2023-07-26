@@ -7,19 +7,22 @@
   --font-fam4: 'Roboto', sans-serif;
 
   --small-size: 0.75rem;
-  --p-size: 2rem;
+
   --title1-size: 6rem;
   --second-tile-size: 3rem;
   --medium-size: 4rem;
   --third-tile-size: 4.5rem;
 
   --title-plan: 2.5rem;
-
+  --text-size: 1.625rem;
+  --text-size2: 1.375rem;
+  --text-size3: 2rem;
+  --text-size4: 1.5rem;
 }
 
 .paragraph-type {
   font-family: var(--font-fam1);
-  font-size: var(--p-size);
+  font-size: var(--text-size3);
   color: var(--second-color);
   letter-spacing: 1px;
   line-height: 1.2;
@@ -54,6 +57,7 @@
   color: var(--second-color);
   font-size: var(--second-tile-size);
   white-space: nowrap;
+  font-family: var(--font-fam3);
 }
 
 .second-title::after {
@@ -73,8 +77,14 @@
   position: relative;
 }
 
+@media(max-width:1024px) {
+  .third-title {
+    font-size: 3.5rem;
+  }
+}
+
 .title-plan {
-  font-size: var(--p-size);
+  font-size: var(--text-size3);
   font-family: var(--font-fam3);
   color: var(--second-color);
   line-height: 1;
@@ -107,4 +117,14 @@
   font-family: var(--font-fam3);
   color: var(--second-color);
   font-weight: 700;
+}
+
+@media(max-width:1024px) {
+  .title {
+    font-size: var(--medium-size);
+  }
+
+  .paragraph-type {
+    font-size: 1rem;
+  }
 }

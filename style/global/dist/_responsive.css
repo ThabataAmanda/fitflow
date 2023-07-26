@@ -1,0 +1,14 @@
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .section-main nav .list-nav a li {
+    font-size: 0.95rem;
+  }
+}

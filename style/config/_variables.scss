@@ -38,6 +38,10 @@
   justify-content: center;
   gap: 1rem;
   margin-bottom: 80px;
+
+  .title-deco {
+    z-index: 1;
+  }
 }
 
 .button-buy {
@@ -52,4 +56,44 @@
   margin-bottom: 30px;
   cursor: pointer;
   transition: 0.7s;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.title-footer {
+  font-size: var(--text-size);
+}
+
+@media(max-width:1024px) {
+  .title-footer {
+    font-size: 1rem;
+  }
+}
+
+.carrossel-plans {
+  display: flex;
+
+  .arrows {
+    width: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+
+  .arrow-right {
+    margin-left: 1rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .arrows {
+      display: contents;
+
+      img {
+        width: 5rem;
+      }
+    }
+  }
 }

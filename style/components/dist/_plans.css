@@ -9,6 +9,9 @@
 .section-plans .section-plans__content {
   position: relative;
   padding: 5.625rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .section-plans .section-plans__content .container-plans {
   display: grid;
@@ -68,4 +71,16 @@
 }
 .section-plans .section-plans__content .container-plans .plan-box:not(:hover) {
   transform: scale(0.9);
+}
+@media (max-width: 1024px) {
+  .section-plans .section-plans__content .container-plans .plan-box:hover {
+    transform: scale(1);
+  }
+}
+@media (max-width: 1024px) {
+  .section-plans .section-plans__content .container-plans {
+    overflow: hidden;
+    margin: 0 1rem;
+    grid-template-columns: 320px;
+  }
 }

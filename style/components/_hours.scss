@@ -1,0 +1,81 @@
+.section-hour {
+  background-image: url(../../media/img/hour/bg_hour.png);
+  display: flex;
+
+  .bg_black {
+    backdrop-filter: none;
+  }
+
+  .section-hour__content {
+    padding: 5.625rem 0;
+
+    .container-hours {
+      display: grid;
+      grid-template-columns: 245px 245px 245px 245px;
+      gap: 7px;
+
+      .box-day {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        border: 2px solid var(--main-color);
+        border-radius: 20px;
+        position: relative;
+        height: 245px;
+        padding: 10px;
+        transition: 0.7s;
+
+        .bg-box-day {
+          border-radius: 20px;
+          position: absolute;
+          z-index: 0;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #0e121294;
+          backdrop-filter: blur(10px);
+        }
+
+        h3,
+        span {
+          z-index: 1;
+          color: var(--second-color);
+        }
+
+        .day {
+          font-size: var(--hour-size);
+          font-family: var(--font-fam3);
+          text-align: center;
+          text-transform: uppercase;
+          line-height: 1;
+        }
+
+        .hour {
+          font-size: var(--text-size2);
+          font-family: var(--font-fam1);
+        }
+      }
+
+      .box-day:hover {
+        background: var(--color1);
+      }
+
+    }
+
+    @media(max-width:1024px) {
+      .container-hours {
+        grid-template-columns: 245px 245px;
+        gap: 10px;
+      }
+    }
+
+    .third-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

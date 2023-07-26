@@ -5,17 +5,29 @@
 .section-teachers .title {
   font-size: 5.313rem;
   text-align: right;
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .section-teachers .title {
+    font-size: var(--medium-size);
+  }
 }
 .section-teachers .paragraph-type {
   text-align: right;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: 300;
+}
+@media (max-width: 1024px) {
+  .section-teachers .paragraph-type {
+    font-size: 1.2rem;
+  }
 }
 .section-teachers .section-teachers__content {
   display: flex;
-  gap: 25px;
-  padding: 5.625rem 0;
+  justify-content: center;
   align-items: center;
+  gap: 35px;
+  padding: 12rem 0;
   position: relative;
 }
 .section-teachers .section-teachers__content .right-text {

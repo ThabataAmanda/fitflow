@@ -1,4 +1,5 @@
 @import './global/global';
+@import './global/responsive';
 
 @import './components/main-section';
 @import './components/about';
@@ -6,6 +7,9 @@
 @import './components/more-items';
 @import './components/teachers';
 @import './components/plans';
+@import './components/hours';
+@import './components/form';
+@import './components/footer';
 
 @import './config/variables';
 @import './config/typography';

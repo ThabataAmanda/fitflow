@@ -12,6 +12,11 @@
   align-items: center;
   gap: 70px;
 }
+@media (max-width: 1024px) {
+  .more-items .more-items__content {
+    gap: 30px;
+  }
+}
 .more-items .list-items {
   display: flex;
   gap: 40px;
@@ -28,6 +33,11 @@
 }
 .more-items .list-items li img {
   width: 2rem;
+}
+@media (max-width: 1024px) {
+  .more-items .list-items li {
+    font-size: 1rem;
+  }
 }
 .more-items .image-right {
   position: relative;

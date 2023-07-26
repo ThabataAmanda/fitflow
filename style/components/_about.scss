@@ -31,6 +31,16 @@
       .gallery__box-image:hover {
         transform: scale(1.1);
       }
+
+      .gallery__box-image:not(:hover) {
+        transform: scale(0.96);
+      }
+    }
+
+    @media(max-width:1024px) {
+      .gallery {
+        grid-template-columns: repeat(3, 242px);
+      }
     }
 
     p {

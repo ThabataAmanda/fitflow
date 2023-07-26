@@ -29,6 +29,14 @@
 .section-about .section-about__content .gallery .gallery__box-image:hover {
   transform: scale(1.1);
 }
+.section-about .section-about__content .gallery .gallery__box-image:not(:hover) {
+  transform: scale(0.96);
+}
+@media (max-width: 1024px) {
+  .section-about .section-about__content .gallery {
+    grid-template-columns: repeat(3, 242px);
+  }
+}
 .section-about .section-about__content p {
   margin-bottom: 80px;
 }

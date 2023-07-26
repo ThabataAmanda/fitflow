@@ -1,28 +1,28 @@
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
+html {
+  scroll-behavior: smooth;
+}
 
- a {
-   text-decoration: none;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
- ul {
-   list-style: none;
- }
+a {
+  text-decoration: none;
+}
 
- .container {
-   max-width: 1000px;
-   margin: 0 auto;
- }
+ul {
+  list-style: none;
+}
 
- img {
-   width: 100%;
-   max-width: 100%;
-   object-fit: contain;
- }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
- .image-deco {
-   width: 1.563rem;
- }
+img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
