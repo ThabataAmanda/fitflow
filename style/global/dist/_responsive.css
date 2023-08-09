@@ -12,3 +12,12 @@
     font-size: 0.95rem;
   }
 }
+@media (max-width: 800px) {
+  .container {
+    max-width: 365px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 165px);
+  }
+}

@@ -44,7 +44,13 @@
   }
 }
 
-.button-buy {
+@media(max-width:800px) {
+  .title-deco {
+    display: none;
+  }
+}
+
+.button-style {
   background: var(--linear1);
   padding: 16px 35px;
   font-family: var(--font-fam1);
@@ -96,4 +102,37 @@
       }
     }
   }
+}
+
+.whatsapp-button {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99;
+
+  img {
+    width: 9rem;
+  }
+}
+
+.credit {
+  color: var(--second-color);
+  font-size: var(--small-size);
+  font-weight: 200;
+  font-family: var(--font-fam1);
+  text-align: center;
+  transition: .9s;
+  display: flex;
+  line-height: 1.8;
+  align-items: center;
+  gap: 15px;
+}
+
+.credit:hover {
+  color: var(--main-color);
+  font-weight: 400;
+}
+
+.my-logo {
+  width: 5rem;
 }

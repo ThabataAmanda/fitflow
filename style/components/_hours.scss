@@ -46,7 +46,7 @@
         }
 
         .day {
-          font-size: var(--hour-size);
+          font-size: 1.3rem;
           font-family: var(--font-fam3);
           text-align: center;
           text-transform: uppercase;
@@ -69,6 +69,26 @@
       .container-hours {
         grid-template-columns: 245px 245px;
         gap: 10px;
+      }
+    }
+
+    @media(max-width:800px) {
+      .container-hours {
+        grid-template-columns: 285px;
+        gap: 25px;
+
+        .box-day {
+          height: 285px;
+          gap: 5px;
+
+          .day {
+            font-size: 1.7rem;
+          }
+
+          .hour {
+            font-size: var(--text-size4);
+          }
+        }
       }
     }
 

@@ -52,3 +52,8 @@
 .more-items .image-right .more-items__box-image .box-image {
   border: 1px solid var(--main-color);
 }
+@media (max-width: 800px) {
+  .more-items .image-right {
+    display: none;
+  }
+}

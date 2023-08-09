@@ -37,6 +37,11 @@
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
+@media (max-width: 800px) {
+  .section-form .section-form__content .box-form .box-form__content .map .container-image {
+    height: 165px;
+  }
+}
 .section-form .section-form__content .box-form .box-form__content .map .about-local {
   padding: 25px;
   border-radius: 0px 0px 10px 10px;
@@ -97,6 +102,11 @@
 .section-form .section-form__content .box-form .box-form__content .area-form .title-form span {
   font-size: var(--small-size);
 }
+@media (max-width: 800px) {
+  .section-form .section-form__content .box-form .box-form__content .area-form .title-form h3 {
+    font-size: 1.7rem;
+  }
+}
 .section-form .section-form__content .box-form .box-form__content .area-form form {
   display: flex;
   flex-direction: column;
@@ -145,7 +155,7 @@
   text-transform: uppercase;
   resize: none;
   padding: 15px;
-  height: 175px;
+  height: 110px;
   border-radius: 5px;
   border: 1px solid var(--color1);
 }
@@ -154,4 +164,19 @@
 .section-form .section-form__content .box-form .box-form__content .area-form form select:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
+}
+.section-form .section-form__content .box-form .box-form__content .area-form form button {
+  border: none;
+  margin-bottom: 0;
+}
+@media (max-width: 800px) {
+  .section-form .section-form__content .box-form .box-form__content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .section-form .section-form__content .box-form .third-title {
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 1.1;
+  }
 }

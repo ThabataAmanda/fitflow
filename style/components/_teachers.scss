@@ -3,20 +3,13 @@
   position: relative;
 
   .title {
-    font-size: 5.313rem;
+    font-size: 4.60rem;
     text-align: right;
     margin-bottom: 30px;
   }
 
-  @media(max-width:1024px) {
-    .title {
-      font-size: var(--medium-size);
-    }
-  }
-
   .paragraph-type {
     text-align: right;
-    font-size: 1.5rem;
     font-weight: 300;
   }
 
@@ -57,4 +50,34 @@
     }
   }
 
+  @media(max-width:800px) {
+    .paragraph-type {
+      text-align: center;
+    }
+  }
+}
+
+
+@media(max-width:800px) {
+  .section-teachers .title {
+    font-size: 3.5rem;
+    text-align: center;
+
+    .title::after {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 5px;
+    }
+  }
+
+  .left-image {
+    display: none;
+  }
+
+}
+
+@media(max-width:1024px) {
+  .title {
+    font-size: var(--medium-size);
+  }
 }

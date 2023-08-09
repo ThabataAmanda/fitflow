@@ -43,6 +43,16 @@
       }
     }
 
+    @media(max-width:800px) {
+      .gallery {
+        grid-template-columns: repeat(2, 165px);
+
+        .gallery__box-image {
+          height: 150px;
+        }
+      }
+    }
+
     p {
       margin-bottom: 80px;
     }

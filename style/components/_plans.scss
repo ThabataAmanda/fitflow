@@ -100,5 +100,17 @@
       }
     }
 
+    @media(max-width:800px) {
+      .third-title {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1.2;
+      }
+
+      .arrows {
+        display: none;
+      }
+    }
+
   }
 }

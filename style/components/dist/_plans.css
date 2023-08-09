@@ -84,3 +84,13 @@
     grid-template-columns: 320px;
   }
 }
+@media (max-width: 800px) {
+  .section-plans .section-plans__content .third-title {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .section-plans .section-plans__content .arrows {
+    display: none;
+  }
+}

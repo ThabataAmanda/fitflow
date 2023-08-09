@@ -43,7 +43,7 @@
   color: var(--second-color);
 }
 .section-hour .section-hour__content .container-hours .box-day .day {
-  font-size: var(--hour-size);
+  font-size: 1.3rem;
   font-family: var(--font-fam3);
   text-align: center;
   text-transform: uppercase;
@@ -60,6 +60,22 @@
   .section-hour .section-hour__content .container-hours {
     grid-template-columns: 245px 245px;
     gap: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .section-hour .section-hour__content .container-hours {
+    grid-template-columns: 285px;
+    gap: 25px;
+  }
+  .section-hour .section-hour__content .container-hours .box-day {
+    height: 285px;
+    gap: 5px;
+  }
+  .section-hour .section-hour__content .container-hours .box-day .day {
+    font-size: 1.7rem;
+  }
+  .section-hour .section-hour__content .container-hours .box-day .hour {
+    font-size: var(--text-size4);
   }
 }
 .section-hour .section-hour__content .third-title {

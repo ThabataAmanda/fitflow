@@ -37,6 +37,14 @@
     grid-template-columns: repeat(3, 242px);
   }
 }
+@media (max-width: 800px) {
+  .section-about .section-about__content .gallery {
+    grid-template-columns: repeat(2, 165px);
+  }
+  .section-about .section-about__content .gallery .gallery__box-image {
+    height: 150px;
+  }
+}
 .section-about .section-about__content p {
   margin-bottom: 80px;
 }

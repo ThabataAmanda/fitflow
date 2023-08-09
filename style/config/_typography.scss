@@ -22,7 +22,7 @@
 
 .paragraph-type {
   font-family: var(--font-fam1);
-  font-size: var(--text-size3);
+  font-size: var(--text-size4);
   color: var(--second-color);
   letter-spacing: 1px;
   line-height: 1.2;
@@ -40,12 +40,26 @@
   margin-bottom: 80px;
 }
 
+
 .title::after {
   content: "";
   height: 5px;
   width: 100%;
   display: block;
   background: var(--linear1);
+}
+
+@media(max-width:800px) {
+  .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .title::after {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
 }
 
 .diff-text {
@@ -58,6 +72,15 @@
   font-size: var(--second-tile-size);
   white-space: nowrap;
   font-family: var(--font-fam3);
+}
+
+@media(max-width:800px) {
+
+  .second-title {
+    font-size: var(--title-plan);
+    text-align: center;
+  }
+
 }
 
 .second-title::after {

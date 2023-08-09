@@ -42,6 +42,12 @@
             }
           }
 
+          @media(max-width:800px) {
+            .container-image {
+              height: 165px;
+            }
+          }
+
           .about-local {
             padding: 25px;
             border-radius: 0px 0px 10px 10px;
@@ -113,11 +119,16 @@
             }
           }
 
+          @media(max-width:800px) {
+            .title-form h3 {
+              font-size: 1.7rem;
+            }
+          }
+
           form {
             display: flex;
             flex-direction: column;
             gap: 15px;
-
 
             .top-box {
               display: flex;
@@ -168,7 +179,7 @@
               text-transform: uppercase;
               resize: none;
               padding: 15px;
-              height: 175px;
+              height: 110px;
               border-radius: 5px;
               border: 1px solid var(--color1);
             }
@@ -179,7 +190,25 @@
               box-shadow: 0 0 0 0;
               outline: 0;
             }
+
+            button {
+              border: none;
+              margin-bottom: 0;
+            }
           }
+        }
+      }
+
+      @media(max-width:800px) {
+        .box-form__content {
+          grid-template-columns: 1fr;
+          gap: 50px;
+        }
+
+        .third-title {
+          text-align: center;
+          margin-bottom: 24px;
+          line-height: 1.1;
         }
       }
     }
