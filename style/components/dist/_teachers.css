@@ -13,7 +13,7 @@
 }
 @media (max-width: 1024px) {
   .section-teachers .paragraph-type {
-    font-size: 1.2rem;
+    font-size: var(--text-size5);
   }
 }
 .section-teachers .section-teachers__content {

@@ -51,7 +51,7 @@
   gap: 5px;
 }
 .section-form .section-form__content .box-form .box-form__content .map .about-local h3 {
-  font-size: var(--title-plan);
+  font-size: var(--fifth-title);
   color: var(--second-color);
   font-family: var(--font-fam3);
   display: flex;
