@@ -107,6 +107,11 @@
   width: 60px;
 }
 
+@media screen and (max-width: 800px) {
+  .whatsapp-button img {
+    width: 80px;
+  }
+}
 .credit {
   color: var(--second-color);
   font-size: var(--small-size);
