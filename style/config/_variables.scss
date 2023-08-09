@@ -115,6 +115,15 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .whatsapp-button {
+    right: 0;
+    img {
+      width: 7rem;
+    }
+  }
+}
+
 .credit {
   color: var(--second-color);
   font-size: var(--small-size);
